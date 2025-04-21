@@ -1,0 +1,142 @@
+{
+    "header": {
+      "nav": {
+        "logoAlt": "logo",
+        "links": {
+          "features": "Features",
+          "benefits": "Benefits",
+          "plans": "Plans",
+          "howItWorks": "How it Works",
+          "testimonials": "Testimonials",
+          "languageToggle": "Eng/Esp",
+          "access": "Access your account"
+        }
+      }
+    },
+    "hero": {
+      "title": "What if managing your warehouse was really easy?",
+      "description": "Forget the chaos. With EasyStock, manage everything simply, quickly, and efficiently.",
+      "cta": "Start now"
+    },
+    "about": {
+      "title": "About Us",
+      "description1": "EasyStock is a platform designed to help you manage your inventory simply and efficiently. We combine technology with IoT sensors, smart alerts, and automatic reports so you can have full control of your products at all times.",
+      "description2": "Our goal: save you time, reduce errors, and grow your business with smarter decisions.",
+      "imageAlt": "Inventory management with EasyStock"
+    },
+    "features": {
+      "title": "Features",
+      "list": [
+        {
+          "title": "Technology adaptable to your business",
+          "description": "We designed our platform with different types of ventures in mind..."
+        },
+        {
+          "title": "Real-time alerts and monitoring",
+          "description": "Control key variables like temperature, weight, or inventory levels..."
+        },
+        {
+          "title": "Intuitive and multiplatform interface",
+          "description": "Access EasyStock from any device without complications..."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Benefits",
+      "list": [
+        {
+          "title": "Less losses, more control",
+          "description": "Avoid spoilage or expiration of sensitive products thanks to automatic monitoring.",
+          "imageAlt": "Less losses"
+        },
+        {
+          "title": "Save time and reduce errors",
+          "description": "Forget manual records and automate key inventory processes.",
+          "imageAlt": "Save time"
+        },
+        {
+          "title": "Make smarter decisions",
+          "description": "Use reports and visual analysis to improve your purchases and sales.",
+          "imageAlt": "Make decisions"
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plans and Pricing",
+      "list": [
+        {
+          "name": "Starter Plan",
+          "subtitle": "Organize your inventory",
+          "description": "Ideal for those who manage inventory on paper or Excel.",
+          "price": "S/ 39/month",
+          "trial": "7-day free trial",
+          "includes": [
+            "Up to 100 products",
+            "1 admin user",
+            "Basic stock, purchase, and sales management",
+            "PDF reports",
+            "Email support"
+          ],
+          "sensors": [
+            "1 sensor (weight or temperature) to automate entries"
+          ]
+        },
+        {
+          "name": "Plus Plan",
+          "subtitle": "Efficient operation",
+          "description": "For growing businesses looking to reduce errors.",
+          "price": "S/ 99/month",
+          "trial": "7-day free trial",
+          "includes": [
+            "Up to 1000 products",
+            "3 users with different roles",
+            "Suggested restocking",
+            "Excel reports + mobile device access",
+            "Automatic alerts via WhatsApp"
+          ],
+          "sensors": [
+            "Up to 3 connected sensors",
+            "Real-time data visualization"
+          ]
+        },
+        {
+          "name": "Total Plan",
+          "subtitle": "Control and expansion",
+          "description": "For businesses needing a more professional operation.",
+          "price": "S/ 189/month",
+          "trial": "7-day free trial",
+          "includes": [
+            "Unlimited products and users",
+            "Dashboards by area (purchases, sales, stock)",
+            "API integration (ERP, ecommerce, etc.)"
+          ],
+          "sensors": [
+            "Up to 10 sensors",
+            "Master panel for monitoring from anywhere",
+            "Automatic report export"
+          ]
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "How does EasyStock work?",
+      "steps": [
+        {
+          "title": "Product registration",
+          "description": "Upload your products with name, expiration date, and location.",
+          "imageAlt": "Product registration"
+        },
+        {
+          "title": "Smart sensors",
+          "description": "Install temperature, weight, or humidity sensors depending on your products.",
+          "imageAlt": "Sensors"
+        },
+        {
+          "title": "Automatic alerts",
+          "description": "We notify you of anomalies or when stock is running low.",
+          "imageAlt": "Alerts"
+        }
+      ]
+    }
+  }
+  

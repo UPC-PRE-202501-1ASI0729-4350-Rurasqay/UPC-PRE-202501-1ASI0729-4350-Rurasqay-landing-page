@@ -1,0 +1,143 @@
+{
+    
+    "header": {
+      "nav": {
+        "logoAlt": "logo",
+        "links": {
+          "features": "Características",
+          "benefits": "Beneficios",
+          "plans": "Planes",
+          "howItWorks": "Cómo funciona",
+          "testimonials": "Testimonios",
+          "languageToggle": "Eng/Esp",
+          "access": "Accede a tu cuenta"
+        }
+      }
+    },
+    "hero": {
+      "title": "¿Y si gestionar tu almacén fuera realmente fácil?",
+      "description": "Olvídate del caos. Con EasyStock, gestiona todo de forma simple, rápida y eficiente.",
+      "cta": "Empieza ahora"
+    },
+    "about": {
+      "title": "Sobre nosotros",
+      "description1": "EasyStock es una plataforma diseñada para ayudarte a gestionar tu inventario de manera simple y eficiente. Combinamos tecnología con sensores IoT, alertas inteligentes y reportes automáticos para que tengas el control total de tus productos en todo momento.",
+      "description2": "Nuestro objetivo: ahorrarte tiempo, reducir errores y hacer crecer tu negocio con decisiones más inteligentes.",
+      "imageAlt": "Gestión de inventario con EasyStock"
+    },
+    "features": {
+      "title": "Características",
+      "list": [
+        {
+          "title": "Tecnología que se adapta a tu negocio",
+          "description": "Diseñamos nuestra plataforma pensando en distintos tipos de emprendimientos..."
+        },
+        {
+          "title": "Alertas y monitoreo en tiempo real",
+          "description": "Controla variables clave como temperatura, peso o niveles de inventario..."
+        },
+        {
+          "title": "Interfaz intuitiva y multiplataforma",
+          "description": "Accede a EasyStock desde cualquier dispositivo sin complicaciones..."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "list": [
+        {
+          "title": "Menos pérdidas, más control",
+          "description": "Evita el desperdicio o vencimiento de productos sensibles gracias al monitoreo automático.",
+          "imageAlt": "Menos pérdidas"
+        },
+        {
+          "title": "Ahorra tiempo y reduce errores",
+          "description": "Olvídate de los registros manuales y automatiza procesos clave del inventario.",
+          "imageAlt": "Ahorra tiempo"
+        },
+        {
+          "title": "Toma decisiones más inteligentes",
+          "description": "Usa reportes y análisis visual para mejorar tus compras y ventas.",
+          "imageAlt": "Toma decisiones"
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planes y precios",
+      "list": [
+        {
+          "name": "Plan Starter",
+          "subtitle": "Organiza tu inventario",
+          "description": "Ideal para quienes aún gestionan el inventario en papel o Excel.",
+          "price": "S/ 39/mes",
+          "trial": "Prueba gratis por 7 días",
+          "includes": [
+            "Hasta 100 productos",
+            "1 usuario administrador",
+            "Gestión básica de stock, compras y ventas",
+            "Reportes PDF",
+            "Soporte por correo"
+          ],
+          "sensors": [
+            "1 sensor (peso o temperatura) para automatizar ingresos"
+          ]
+        },
+        {
+          "name": "Plan Plus",
+          "subtitle": "Operación eficiente",
+          "description": "Para negocios en crecimiento que buscan reducir errores.",
+          "price": "S/ 99/mes",
+          "trial": "Prueba gratis por 7 días",
+          "includes": [
+            "Hasta 1000 productos",
+            "3 usuarios con distintos roles",
+            "Sugerencia de reposición",
+            "Reportes en Excel + acceso desde dispositivos móviles",
+            "Alertas automáticas por WhatsApp"
+          ],
+          "sensors": [
+            "Hasta 3 sensores conectados",
+            "Visualización de datos en tiempo real"
+          ]
+        },
+        {
+          "name": "Plan Total",
+          "subtitle": "Control y expansión",
+          "description": "Para negocios que requieren una operación más profesional.",
+          "price": "S/ 189/mes",
+          "trial": "Prueba gratis por 7 días",
+          "includes": [
+            "Productos y usuarios ilimitados",
+            "Dashboards por área (compras, ventas, stock)",
+            "Integración por API (ERP, ecommerce, etc.)"
+          ],
+          "sensors": [
+            "Hasta 10 sensores",
+            "Panel maestro para monitoreo desde cualquier lugar",
+            "Exportación automática de reportes"
+          ]
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona EasyStock?",
+      "steps": [
+        {
+          "title": "Registro de productos",
+          "description": "Sube tus productos con nombre, fecha de vencimiento y ubicación.",
+          "imageAlt": "Registro de productos"
+        },
+        {
+          "title": "Sensores inteligentes",
+          "description": "Instala sensores de temperatura, peso o humedad según tus productos.",
+          "imageAlt": "Sensores"
+        },
+        {
+          "title": "Alertas automáticas",
+          "description": "Te avisamos de anomalías o cuando el stock esté por agotarse.",
+          "imageAlt": "Alertas"
+        }
+      ]
+    }
+  }
+  

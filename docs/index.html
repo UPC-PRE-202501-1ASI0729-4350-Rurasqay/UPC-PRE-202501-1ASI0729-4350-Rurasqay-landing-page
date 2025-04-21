@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EasyStock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+    <header aria-label="Encabezado principal con navegación" style="background-color: white;">
+        <nav aria-label="Menú principal">
+          <ul>
+            <li><a  href="#index.html" aria-label="Ir a características"><img src="img/Logo with nombre.png" alt="logo" class="Logo"></a></li>
+            <li><a data-i18n="features" href="#caracteristicas" aria-label="Ir a características">Características</a></li>
+            <li><a data-i18n="benefits" href="#beneficios" aria-label="Ir a beneficios">Beneficios</a></li>
+            <li><a data-i18n="plans" href="#planes" aria-label="Ir a planes">Planes</a></li>
+            <li><a data-i18n="howItWorks" href="#funcionamiento" aria-label="Ir a funcionamiento">Funcionamiento</a></li>
+            <li><a data-i18n="testimonials" href="#testimonios" aria-label="Ir a testimonios">Testimonios</a></li>
+            <li><a data-i18n="languageToggle" href="#" class="btn-lang" aria-label="Cambiar idioma a inglés o español">Eng/Esp</a></li>
+            <li><a data-i18n="access" href="#" class="btn-access" aria-label="Acceder a tu cuenta">Access</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      
+      <section class="hero-section" aria-label="Sección principal con llamada a la acción">
+        <div class="hero-overlay">
+            <h1 data-i18n="heroTitle">¿Y si gestionar tu almacén fuera realmente fácil?</h1>
+            <p data-i18n="heroDesc">Olvídate del caos. Con EasyStock, gestiona todo de forma simple, rápida y eficiente.</p>
+          <div class="cta-buttons">
+          </div>
+          <a href="#" class="cta-btn"  data-i18n="ctaBtn" aria-label="Comenzar con EasyStock">Empieza ahora</a>
+        </div>
+      </section>
+
+
+      <section class="about-section" aria-label="Sobre EasyStock">
+        <div class="about-container">
+          <div class="about-text">
+            <h2 data-i18n="aboutTitle">Sobre nosotros</h2>
+            <p data-i18n="aboutDesc1">
+              EasyStock es una plataforma diseñada para ayudarte a gestionar tu inventario de forma simple y eficiente. 
+              Combinamos tecnología con sensores IoT, alertas inteligentes y reportes automáticos para que tengas el 
+              control total de tus productos en todo momento.
+            </p>
+            <p data-i18n="aboutDesc2">
+              Nuestro objetivo: que ahorres tiempo, reduzcas errores y hagas crecer tu negocio con decisiones más inteligentes.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="img/Coworking-pana.png" data-i18n="aboutImageAlt" alt="Gestión de inventario con EasyStock">
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section" id="caracteristicas" aria-label="Características de EasyStock">
+        <div class="features-container">
+          <h2 class="features-title" data-i18n="featuresTitle">Características</h2>
+      
+          <div class="features-grid">
+            <div class="gradient-border">
+              <div class="feature-card">
+                <h3 data-i18n="features1Title">Tecnología adaptable a tu negocio</h3>
+                <p data-i18n="features1Desc">Diseñamos nuestra plataforma pensando en diferentes tipos de emprendimientos...</p>
+              </div>
+            </div>
+          
+            <div class="gradient-border">
+              <div class="feature-card">
+                <h3 data-i18n="features2Title">Alertas y monitoreo en tiempo real</h3>
+                <p data-i18n="features2Desc">Controla variables clave como temperatura, peso o niveles de inventario...</p>
+              </div>
+            </div>
+          
+            <div class="gradient-border">
+              <div class="feature-card">
+                <h3 data-i18n="features3Title">Interfaz intuitiva y multiplataforma</h3>
+                <p data-i18n="features3Desc">Accede a EasyStock desde cualquier dispositivo sin complicaciones...</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+  
+<!-- Beneficios -->
+<section class="benefits" aria-label="Beneficios de EasyStock">
+    <h2 data-i18n="benefitsTitle">Beneficios</h2>
+    <div class="benefits-cards">
+      
+      <div class="gradient-border-horizontal">
+        <div class="benefit-card">
+          <div class="benefit-image">
+            <img src="img/icons8-graph-50.png" data-i18n="benefits1ImageAlt"alt="Menos pérdidas" />
+          </div>
+          <div class="benefit-text">
+            <h3 data-i18n="benefits1Title">Menos pérdidas, más control</h3>
+            <p data-i18n="benefits1Desc">Evita deterioros o vencimientos de productos sensibles gracias al monitoreo automático.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="gradient-border-horizontal">
+        <div class="benefit-card">
+          <div class="benefit-image">
+            <img src="img/icons8-time-50.png"data-i18n="benefits2ImageAlt" alt="Ahorro de tiempo" />
+          </div>
+          <div class="benefit-text">
+            <h3 data-i18n="benefits2Title">Ahorro de tiempo y reducción de errores</h3>
+            <p data-i18n="benefits2Desc">Olvídate de los registros manuales y automatiza procesos clave de tu inventario.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="gradient-border-horizontal">
+        <div class="benefit-card">
+          <div class="benefit-image">
+            <img src="img/icons8-intelligence-30.png"  data-i18n="benefits3ImageAlt" alt="Toma decisiones" />
+          </div>
+          <div class="benefit-text">
+            <h3 data-i18n="benefits3Title">Toma decisiones más inteligentes</h3>
+            <p data-i18n="benefits3Desc">Usa reportes y análisis visuales para mejorar tus compras y ventas.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section class="plans" aria-label="Planes y precios de EasyStock">
+    <h2 data-i18n="plansTitle">Planes y Precios</h2>
+    <div class="cards">
+  
+      <!-- Plan Inicial -->
+      <div class="card" aria-label="Plan Inicial – Organiza tu inventario">
+        <h3 data-i18n="plan1Name">Plan Inicial</h3>
+        <h4 data-i18n="plan1Subtitle">Organiza tu inventario</h4>
+        <p data-i18n="plan1Desc" class="plan-description">Ideal para quienes llevan su inventario en papel o Excel.</p>
+        <p data-i18n="plan1Price" class="plan-price"><strong>S/ 39/mes</strong></p>
+        <p data-i18n="plan1Trial" class="trial">Prueba gratuita de 7 días</p>
+        <h5 data-i18n="includesTitle">Incluye:</h5>
+        <ul data-i18n="plan1Features">
+          <li >Hasta 100 productos</li>
+          <li >1 usuario administrador</li>
+          <li >Gestión básica de stock, compras y ventas</li>
+          <li >Reportes en PDF</li>
+          <li >Soporte vía correo</li>
+        </ul>
+        <h5 data-i18n="sensorsTitle">Sensores:</h5>
+        <ul>
+          <li data-i18n="plan1Sensors">1 sensor (peso o temperatura) para automatizar entradas</li>
+        </ul>
+        <button class="button" data-i18n="plansTitle">Seleccionar</button>
+      </div>
+  
+      <!-- Plan Plus -->
+      <div class="card highlight" aria-label="Plan Plus – Operación eficiente">
+        <h3 data-i18n="plan2Name">Plan Plus</h3>
+        <h4 data-i18n="plan2Subtitle">Operación eficiente</h4>
+        <p data-i18n="plan2Desc" class="plan-description">Para negocios en crecimiento que buscan reducir errores.</p>
+        <p data-i18n="plan2Price" class="plan-price"><strong>S/ 99/mes</strong></p>
+        <p data-i18n="plan2Trial" class="trial">Prueba gratuita de 7 días</p>
+        <h5 data-i18n="includesTitle">Incluye:</h5>
+        <ul data-i18n="plan2Features">
+          <li>Hasta 1000 productos</li>
+          <li>3 usuarios con distintos roles</li>
+          <li>Reabastecimiento sugerido</li>
+          <li>Reportes en Excel + acceso desde dispositivos móviles</li>
+          <li>Alertas automáticas por WhatsApp</li>
+        </ul>
+        <h5 data-i18n="benefits3Desc" data-i18n="sensorsTitle">Sensores:</h5>
+        <ul data-i18n="plan2Sensors">
+          <li>Hasta 3 sensores conectados</li>
+          <li>Visualización de datos en tiempo real</li>
+        </ul>
+        <button class="button" data-i18n="benefits3Desc">Seleccionar</button>
+      </div>
+
+      <!-- Plan Total -->
+      <div class="card" aria-label="Plan Total – Control y expansión">
+        <h3 data-i18n="plan3Name">Plan Total</h3>
+        <h4 data-i18n="plan3Subtitle">Control y expansión</h4>
+        <p data-i18n="plan3Desc" class="plan-description">Para negocios que necesitan una operación más profesional.</p>
+        <p data-i18n="plan3Price" class="plan-price"><strong>S/ 189/mes</strong></p>
+        <p data-i18n="plan3Trial" class="trial">Prueba gratuita de 7 días</p>
+        <h5 data-i18n="includesTitle" >Incluye:</h5>
+        <ul data-i18n="plan3Features">
+          <li>Productos y usuarios ilimitados</li>
+          <li>Dashboards por áreas (compras, ventas, stock)</li>
+          <li>Integración vía API (ERP, ecommerce, etc.)</li>
+        </ul>
+        <h5 data-i18n="sensorsTitle">Sensores:</h5>
+        <ul data-i18n="plan3Sensors">
+          <li>Hasta 10 sensores</li>
+          <li>Panel maestro para monitoreo desde cualquier lugar</li>
+          <li>Exportación de reportes automáticos</li>
+        </ul>
+        <button class="button" data-i18n="selectButton">Seleccionar</button>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Funcionamiento -->
+  <section class="how-it-works" aria-label="Cómo funciona EasyStock">
+    <h2 data-i18n="howItWorksTitle">¿Cómo funciona EasyStock?</h2>
+    <div class="flow">
+      <div class="step" aria-label="Registro e ingreso de productos">
+        <img data-i18n="howStep1ImageAlt" src="img/centre-for-ageing-better-ZlOlRnWk8zU-unsplash-1024x682.jpg" alt="Registro de productos">
+        <h4 data-i18n="howStep1Title">Registro de productos</h4>
+        <p data-i18n="howStep1Desc">Sube tus productos con nombre, fecha de vencimiento y ubicación.</p>
+      </div>
+      <div class="step" aria-label="Conecta sensores inteligentes">
+        <img data-i18n="howStep2ImageAlt" src="img/Y2887633-01.png" alt="Sensores">
+        <h4 data-i18n="howStep2Title">Sensores inteligentes</h4>
+        <p data-i18n="howStep2Desc">Instala sensores de temperatura, peso o humedad según tus productos.</p>
+      </div>
+      <div class="step" aria-label="Recibe alertas automáticas">
+        <img data-i18n="howStep3ImageAlt" src="img/adult-cell-cellphone-263593.png" alt="Alertas">
+        <h4 data-i18n="howStep3Title">Alertas automáticas</h4>
+        <p data-i18n="howStep3Desc">Te avisamos si hay anomalías o si el stock está por agotarse.</p>
+      </div>
+      <div class="step" aria-label="Toma decisiones con datos reales">
+        <img src="img/pros-5201376_640.jpg" alt="Datos">
+        <h4  data-i18n="dataStepTitle">Decisiones con datos</h4>
+        <p data-i18n="dataStepDesc">Usa predicciones para planificar compras y evitar pérdidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials" aria-label="Testimonios de usuarios de EasyStock">
+    <h2 data-i18n="testimonialsTitle">Lo que dicen nuestros clientes</h2>
+    <div class="cards">
+      
+      <!-- Testimonio 1 -->
+      <div class="testimonial-card" aria-label="Testimonio de Diego Pacotaipe">
+        <div class="testimonial-left">
+          <img src="img/doctor-2337835_640.jpg" alt="Foto de Diego Pacotaipe" class="avatar">
+          <div class="author" >
+            Diego Pacotaipe<br>
+            <small data-i18n="testimonial1Company">BioCosmética Natural</small>
+          </div>
+        </div>
+        <div class="testimonial-right">
+          <p data-i18n="testimonial1Text">“Con EasyStock, redujimos pérdidas en 90%. Es como tener un asistente 24/7.”</p>
+          <button class="stars" aria-label="5 estrellas">★★★★★</button>
+        </div>
+      </div>
+  
+      <!-- Testimonio 2 -->
+      <div class="testimonial-card" aria-label="Testimonio de Kevin Barrientos">
+        <div class="testimonial-left">
+          <img src="img/embroidery-7357531_640.jpg" alt="Foto de Kevin Barrientos" class="avatar">
+          <div class="author" >
+            Kevin Barrientos<br>
+            <small data-i18n="testimonial2Company">Textiles Andinos</small>
+          </div>
+        </div>
+        <div class="testimonial-right">
+          <p data-i18n="testimonial2Text">“Antes usábamos Excel. Ahora controlamos más de 1000 productos sin errores.”</p>
+          <button class="stars" aria-label="5 estrellas">★★★★★</button>
+        </div>
+      </div>
+  
+      <!-- Testimonio 3 -->
+      <div class="testimonial-card" aria-label="Testimonio de Mariana Torres">
+        <div class="testimonial-left">
+          <img src="img/cook-657352_640.jpg" alt="Foto de Mariana Torres" class="avatar">
+          <div class="author" >
+            Mariana Torres<br>
+            <small data-i18n="testimonial3Company">Gourmet Ecológico</small>
+          </div>
+        </div>
+        <div class="testimonial-right">
+          <p data-i18n="testimonial3Text">“Todo se actualiza en tiempo real. EasyStock me da tranquilidad total.”</p>
+          <button class="stars" aria-label="5 estrellas">★★★★★</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2 aria-label="Prueba EasyStock y mejora la calidad de tus productos" data-i18n="contactTitle">
+        Pruebalo y <br><span>mejora la calidad <br>de tus productos</span>
+      </h2>
+    </div>
+  
+    <div class="contact-form">
+      <p class="intro-text" aria-label="Invitación a contactar para una demo gratuita" data-i18n="contactIntro">
+        ¿Te interesa EasyStock Enterprise? Contacta con nuestro equipo para recibir una demostración personalizada gratuita.
+      </p>
+      <h3 aria-label="Formulario para contactar con EasyStock" data-i18n="contactFormTitle">Contactar con nosotros</h3>
+  
+      <form aria-label="Formulario de contacto">
+        <label for="fullname" data-i18n="contactLabelName">Full Name</label>
+        <input type="text" id="fullname" data-i18n="contactPlaceholderName" placeholder="Ingresa su nombre completo" aria-label="Nombre completo">
+  
+        <label for="email" data-i18n="contactLabelEmail">Email Address</label>
+        <input type="email" id="email" data-i18n="contactPlaceholderEmail" placeholder="Ingresa su correo electrónico" aria-label="Correo electrónico">
+  
+        <label for="details" data-i18n="contactLabelDetails">Details</label>
+        <textarea id="details" data-i18n="contactPlaceholderDetails" placeholder="Ingresa tus detalles" aria-label="Detalles del mensaje"></textarea>
+  
+        <button type="submit" aria-label="Enviar formulario de contacto" data-i18n="contactButton">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+          <img src="img/Logo with nombre.png" alt="Logo de EasyStock" aria-label="Logo de EasyStock">
+          <p aria-label="Descripción de EasyStock" data-i18n="footerDesc">
+            Con EasyStock, controla tu inventario de forma inteligente, estés donde estés.
+            Nuestra solución te ofrece accesibilidad, eficiencia y tranquilidad.
+          </p>
+        </div>
+    
+        <div class="footer-menu">
+          <div>
+            <h4 aria-label="Sección de contenido del sitio"data-i18n="footerSectionContent">Contenido</h4>
+            <ul>
+              <li><a href="#" data-i18n="footerLinkFeatures">Características</a></li>
+              <li><a href="#" data-i18n="footerLinkBenefits">Beneficios</a></li>
+              <li><a href="#" data-i18n="footerLinkPlans">Planes y Precios</a></li>
+              <li><a href="#" data-i18n="footerLinkHow">Funcionamiento</a></li>
+              <li><a href="#" data-i18n="footerLinkTestimonials">Testimonios</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 aria-label="Sección sobre nosotros" data-i18n="footerSectionAbout">Nosotros</h4>
+            <ul>
+              <li><a href="#"data-i18n="footerLinkStory">Nuestra historia</a></li>
+              <li><a href="#"data-i18n="footerLinkMission">Misión</a></li>
+              <li><a href="#"data-i18n="footerLinkVision">Visión</a></li>
+              <li><a href="#"data-i18n="footerLinkTeam">Nuestro Equipo</a></li>
+              <li><a href="#"data-i18n="footerLinkContact">Contáctanos</a></li>
+              <li><a href="#"data-i18n="footerLinkSupport">Soporte</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    <div class="footer-bottom">
+      <p aria-label="Derechos de autor" data-i18n="footerCopyright">©2025 EasyStock, Inc. All rights reserved</p>
+      <div class="footer-links">
+        <a href="#" aria-label="Políticas de la empresa" data-i18n="footerLinkPolicies">Políticas de la empresa</a>
+        <a href="#" aria-label="Términos de uso" data-i18n="footerLinkTerms">Términos de uso</a>
+      </div>
+      <div class="social-icons" aria-label="Redes sociales de EasyStock">
+        <a href="#" aria-label="YouTube"><img src="img/icons8-youtube.svg" alt="YouTube"></a>
+        <a href="#" aria-label="X"><img src="img/icons8-x.svg" alt="X"></a>
+        <a href="#" aria-label="Facebook"><img src="img/icons8-facebook.svg" alt="Facebook"></a>
+        <a href="#" aria-label="Instagram"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
+        <a href="#" aria-label="TikTok"><img src="img/icons8-tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="js/script.js"></script>
