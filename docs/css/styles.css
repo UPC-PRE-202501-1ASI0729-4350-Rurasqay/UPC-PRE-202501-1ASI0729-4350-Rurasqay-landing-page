@@ -824,4 +824,55 @@ color: rgb(255, 0, 0);
       text-align: center;
     }
   }
-  
+  /* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  /* Ocultar todos los elementos del menú excepto el logo */
+  nav ul li:not(:first-child) {
+    display: none;
+  }
+
+  /* Centrar el logo y darle espacio */
+  nav ul {
+    justify-content: center;
+  }
+
+  .hero-section {
+    height: auto;
+    background-position: top;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-overlay {
+    max-width: 90%;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .benefit-card{
+    height: auto;
+  }
+  .hero-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .cta-buttons,
+  .cta-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 25%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+}
