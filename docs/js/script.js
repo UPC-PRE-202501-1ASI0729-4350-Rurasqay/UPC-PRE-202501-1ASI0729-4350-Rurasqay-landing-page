@@ -413,3 +413,18 @@ const translations = {
       switchLanguage();
     });
   });
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+    const openMenuButton = document.getElementById("open-menu");
+    const closeMenuButton = document.getElementById("close-menu");
+    const mobileMenuSection = document.querySelector(".mobile-menu-section");
+
+    openMenuButton.addEventListener("click", () => {
+      mobileMenuSection.classList.add("active");
+    });
+
+    closeMenuButton.addEventListener("click", () => {
+      mobileMenuSection.classList.remove("active");
+    });
+  });
