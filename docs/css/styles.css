@@ -14,6 +14,10 @@
     top: 0;
     width: 100%;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
   
   nav {
@@ -21,7 +25,7 @@
     background-color: white;
     padding: 10px 20px;
   }
-  
+
   /* Para evitar que el contenido se esconda debajo del header fijo */
   body {
     padding-top: 70px; /* Ajusta según la altura de tu header */
@@ -69,10 +73,13 @@
     align-items: center;
     font-size: 18px;
     padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
     
   }
   nav ul a{
     text-decoration: none;
+
     color: #333;
     font-weight:190px;
     font-style: normal;
@@ -96,6 +103,7 @@
   
   /* Hero con imagen de fondo */
   .hero-section {
+    
     margin: 0;
     background-image: url('../img/womanLo.jpg');
     background-size: cover;         /* que cubra toda la sección */
@@ -104,7 +112,11 @@
     height: 70vh;                  /* ocupa toda la pantalla */
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: left;
+     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    justify-content: center;
+    align-items: left;
+    text-align: left;
   }
   
   .hero-overlay {
@@ -125,12 +137,16 @@
     font-size: 1.2rem;
 
   }
-  .cta-buttons {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
+.cta-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Logo_Discreto{
+  display: none;
+}
   
   .cta-btn {
     margin-top: 1rem;
@@ -148,6 +164,13 @@
     background-color: #e05f2e;
   }
   
+.cta-btn.primary {
+  background-color: #45044a;
+  color: white;
+}
+
+
+
 
   .about-section {
     padding: 20px 20px;
@@ -168,8 +191,6 @@
     min-width: 300px;
     padding-right: 30px;
     text-align: left;
-
-
   }
   
   .about-text h2 {
@@ -195,6 +216,100 @@
     height: auto;
     border-radius: 10px;
   }
+
+  .section-title h2{
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+  }
+
+.screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.screenshot-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.screenshot-image:hover {
+  transform: scale(1.03);
+}
+
+.screenshot-video {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+nav ul li a{
+  font-size: 0.9rem;;
+}
+.Logo_Discreto{
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+}
+.Logo{
+  display: none;
+}
+  nav{
+    height: 40px;
+  }
+}
+.screenshot-video video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+@media(max-height: 768px){
+  .screenshot-video video {
+    max-width: 100%;
+    height: auto;
+  }
+  .Logo_Discreto{
+    display: block;
+    width: 30%;
+    padding: 4px 0 4px 10px;
+  }
+  .menu-icon{
+    display: none;
+  }
+  header{
+    height: 100px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .screenshot-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Logo_Discreto{
+    display: block;
+    width: 30%;
+    padding: 4px 0 4px 10px;
+  }
+  .screenshot-image {
+    max-width: 90%;
+  }
+
+  .screenshot-video video {
+    max-width: 90%;
+  }
+}
+
+
   .features-section {
     background-color: #ffffff;
     padding: 60px 20px;
@@ -216,6 +331,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
     
   }
   
@@ -269,6 +387,7 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
   }
   
   /* Card completa con borde gradiente */
@@ -290,6 +409,8 @@
     text-align: left;
     height: 200px;
     padding: 15px;
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+
   }
   
   /* Imagen */
@@ -343,7 +464,8 @@
   .benefits,
   .plans,
   .how-it-works,
-  .testimonials {
+  .testimonials
+  {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -378,6 +500,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .card.highlight {
@@ -485,7 +611,18 @@ color: rgb(255, 0, 0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+.menu-icon {
+  display: none; /* Oculto por defecto */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+}
 .how-it-works .step img:hover {
   transform: scale(1.03);
 }
@@ -535,6 +672,8 @@ color: rgb(255, 0, 0);
     min-height: 230px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
+      justify-content: center;
+
   }
   
   .testimonial-left {
@@ -584,7 +723,17 @@ color: rgb(255, 0, 0);
     cursor: default;
     font-family: 'Arial', sans-serif;
   }
-  
+  .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espacio entre los íconos */
+  align-items: center; /* opcional, centra los íconos horizontalmente */
+}
+
+.iconos{
+
+  width: 10%;
+}
   /* Responsive para pantallas pequeñas */
   @media (max-width: 1100px) {
     .cards {
@@ -617,6 +766,8 @@ color: rgb(255, 0, 0);
     width: 100%;
     max-width: 600px;
     transition: transform 0.3s ease;
+      display: flex;
+    flex-direction: column;
   }
   
   .contact-form:hover {
@@ -762,7 +913,157 @@ color: rgb(255, 0, 0);
   .footer-menu a:hover {
     color: #d72600;
   }
-  
+ /* Nueva sección del menú móvil */
+.mobile-menu-section {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+}
+
+/* Mostrar el menú cuando esté activo */
+.mobile-menu-section.active {
+  display: block;
+}
+
+/* Estilo del menú móvil */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Botón de cierre del menú */
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo de los enlaces del menú */
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+  color: #ff6f00;
+}
+
+
+/* Estilo general para la sección .cta-easystock */
+.cta-easystock {
+  background-color: #fff7f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta-easystock .cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-easystock h2 {
+  font-size: 2.5rem;
+  color: #cc0000;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.cta-easystock h2 span {
+  color: #ff6f00;
+}
+
+.cta-easystock p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-easystock .cta-button {
+  display: inline-block;
+  background: linear-gradient(to bottom, #de2e03, #950015);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-easystock .cta-button:hover {
+  background-color: #e05f2e;
+}
+
+/* Responsive para pantallas de hasta 768px */
+@media (max-width: 768px) {
+  .cta-easystock {
+    padding: 30px 15px;
+  }
+
+  .cta-easystock h2 {
+    font-size: 2rem;
+  }
+
+  .cta-easystock p {
+    font-size: 1rem;
+  }
+
+  .cta-easystock .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Responsive para pantallas de hasta 480px */
+@media (max-width: 480px) {
+  .cta-easystock {
+    padding: 20px 10px;
+  }
+
+  .cta-easystock h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-easystock p {
+    font-size: 0.9rem;
+  }
+
+  .cta-easystock .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+
   /* Responsive */
   @media (max-width: 768px) {
     .footer-container {
@@ -799,8 +1100,30 @@ color: rgb(255, 0, 0);
     height: 24px;
     margin-right: 10px;
   }
-  
+  @media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .mobile-menu-section {
+    display: none !important;
+  }
+}
+
   @media (max-width: 768px) {
+
+  .button {
+    padding: 10px 20px;
+  }
+     .menu-icon {
+    display: block; /* Mostrar el ícono en pantallas pequeñas */
+    margin: 0 auto; /* Centrar debajo del logo */
+    padding-right: 3%;
+  }
+
+  nav ul {
+    display: none; /* Ocultar el menú completo */
+  }
     .cards,
     .how-it-works .flow,
     .testimonials {
@@ -824,6 +1147,292 @@ color: rgb(255, 0, 0);
       text-align: center;
     }
   }
+  
+
+  /* Responsive para tablets (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+  /* General */
+  body {
+    padding-top: 50px; /* Ajusta el espacio superior para el header fijo */
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  header nav ul a{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .hero-section {
+    height: 400px;
+    text-align: center;
+  }
+
+  .hero-overlay {
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+    
+  }
+  .cta-buttons {
+    flex-direction: row; /* Mantén los botones en fila horizontal */
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Features Section */
+  .features-grid {
+    text-align: center;
+    flex-direction: column;
+
+  }
+
+  /* Benefits Section */
+  .benefits-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .benefit-image img {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+
+  /* Plans Section */
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Testimonials Section */
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-left {
+    margin-bottom: 15px;
+  }
+
+  .testimonial-right p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Responsive para celulares (pantallas de hasta 480px) */
+@media (max-width: 480px) {
+  /* General */
+  h2 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    font-size: 14px;
+  }
+nav ul{
+  display: none;
+}
+  .hero-overlay {
+  height: 60%;
+  }
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .cta-btn {
+    font-size: 0.7rem;
+  }
+  .cta-buttons {
+    flex-direction:row-reverse; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
+  }
+  /* About Section */
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  /* Features Section */
+  .features-title {
+    font-size: 2rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Benefits Section */
+  .benefit-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-text p {
+    font-size: 0.85rem;
+  }
+
+  /* Plans Section */
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card ul li {
+    font-size: 0.85rem;
+  }
+
+  .card .button {
+    font-size: 0.9rem;
+  }
+
+  /* Testimonials Section */
+  .testimonial-card {
+    max-width: 80%;
+  }
+
+  .testimonial-right p {
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .footer-left p {
+    font-size: 0.85rem;
+  }
+
+  .footer-menu h4 {
+    font-size: 1rem;
+  }
+
+  .footer-menu a {
+    font-size: 0.85rem;
+  }
+  .feature-card{
+    width: 70%;
+  }
+  .gradient-border{
+    display: padding 0px ;
+    background-color: transparent;
+    width: 100%;
+  }
+  .contact-form{
+    width: 90%;
+  }
+
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-menu div {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+  .Logo_Discreto{
+    width: 30%;
+    padding: 4px 0 4px 10px;
+  }
+}
   /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
 

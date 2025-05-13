@@ -15,6 +15,10 @@
 <body>
 
     <header aria-label="Encabezado principal con navegación" style="background-color: white;">
+      <a  href="#index.html" aria-label="Logo"><img src="img/Logo with nombre.png" alt="logo" class="Logo_Discreto"></a></li>
+        <button class="menu-icon" aria-label="Abrir menú">
+    <img src="img/icons8-menú.svg" alt="Menú">
+  </button>
         <nav aria-label="Menú principal">
           <ul>
             <li><a  href="#index.html" aria-label="Ir a características"><img src="docs/img/LOGO.png" alt="logo" class="Logo"></a></li>
@@ -27,19 +31,37 @@
             <li><a data-i18n="access" href="#" class="btn-access" aria-label="Acceder a tu cuenta">Access</a></li>
           </ul>
         </nav>
+
       </header>
 
 
+<!-- Nueva sección para el menú móvil -->
+<section class="mobile-menu-section">
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+    <button class="close-menu" aria-label="Cerrar menú" id="close-menu">X</button>
+    <ul>
+      <li><a href="#caracteristicas" aria-label="Ir a características">Características</a></li>
+      <li><a href="#beneficios" aria-label="Ir a beneficios">Beneficios</a></li>
+      <li><a href="#planes" aria-label="Ir a planes">Planes</a></li>
+      <li><a href="#funcionamiento" aria-label="Ir a funcionamiento">Funcionamiento</a></li>
+      <li><a href="#testimonios" aria-label="Ir a testimonios">Testimonios</a></li>
+      <li><a href="#" class="btn-lang" aria-label="Cambiar idioma a inglés o español">Eng/Esp</a></li>
+      <li><a href="#" class="btn-access" aria-label="Acceder a tu cuenta">Access</a></li>
+    </ul>
+  </nav>
+</section>
       
-      <section class="hero-section" aria-label="Sección principal con llamada a la acción">
-        <div class="hero-overlay">
-            <h1 data-i18n="heroTitle">¿Y si gestionar tu almacén fuera realmente fácil?</h1>
-            <p data-i18n="heroDesc">Olvídate del caos. Con EasyStock, gestiona todo de forma simple, rápida y eficiente.</p>
-          <div class="cta-buttons">
-          </div>
-          <a href="#" class="cta-btn"  data-i18n="ctaBtn" aria-label="Comenzar con EasyStock">Empieza ahora</a>
-        </div>
-      </section>
+<section class="hero-section" aria-label="Sección principal con llamada a la acción">
+  <div class="hero-overlay">
+    <h1 data-i18n="heroTitle">¿Y si gestionar tu almacén fuera realmente fácil?</h1>
+    <p data-i18n="heroDesc">Olvídate del caos. Con EasyStock, gestiona todo de forma simple, rápida y eficiente.</p>
+    
+    <div class="cta-buttons">
+      <a href="#screenshots" class="cta-btn secondary" data-i18n="ctaHowItWorks" aria-label="Ver cómo funciona EasyStock">Ver cómo funciona</a>
+      <a href="#contact" class="cta-btn primary" data-i18n="ctaTryNow" aria-label="Solicita una demo de EasyStock">Solicita una demo</a>
+    </div>
+  </div>
+</section>
 
 
       <section class="about-section" aria-label="Sobre EasyStock">
@@ -60,6 +82,20 @@
           </div>
         </div>
       </section>
+
+<section class="screenshots-section" id="screenshots" aria-label="Capturas de pantalla de EasyStock" data-i18n="section.screenshots">
+  <h2 class="section-title" data-i18n="screenshots.title">¿Cómo se ve EasyStock?</h2>
+
+  <div class="screenshot-gallery">
+    <img class="screenshot-image" src="img/EasyStock_page-0001.jpg" alt="Pantalla principal de EasyStock" data-i18n="[alt]screenshots.screen1">
+    <img class="screenshot-image" src="img/EasyStock_page-0011.jpg" alt="Gestión de inventario en EasyStock" data-i18n="[alt]screenshots.screen2">
+    <img class="screenshot-image" src="img/EasyStock_page-0022.jpg" alt="Alertas de stock mínimo" data-i18n="[alt]screenshots.screen2">
+
+  </div>
+
+</section>
+
+
 
       <section class="features-section" id="caracteristicas" aria-label="Características de EasyStock">
         <div class="features-container">
@@ -291,35 +327,20 @@
   
     </div>
   </section>
-  
-  <section class="contact-section">
-    <div class="contact-info">
-      <h2 aria-label="Prueba EasyStock y mejora la calidad de tus productos" data-i18n="contactTitle">
-        Pruebalo y <br><span>mejora la calidad <br>de tus productos</span>
-      </h2>
-    </div>
-  
-    <div class="contact-form">
-      <p class="intro-text" aria-label="Invitación a contactar para una demo gratuita" data-i18n="contactIntro">
-        ¿Te interesa EasyStock Enterprise? Contacta con nuestro equipo para recibir una demostración personalizada gratuita.
-      </p>
-      <h3 aria-label="Formulario para contactar con EasyStock" data-i18n="contactFormTitle">Contactar con nosotros</h3>
-  
-      <form aria-label="Formulario de contacto">
-        <label for="fullname" data-i18n="contactLabelName">Full Name</label>
-        <input type="text" id="fullname" data-i18n="contactPlaceholderName" placeholder="Ingresa su nombre completo" aria-label="Nombre completo">
-  
-        <label for="email" data-i18n="contactLabelEmail">Email Address</label>
-        <input type="email" id="email" data-i18n="contactPlaceholderEmail" placeholder="Ingresa su correo electrónico" aria-label="Correo electrónico">
-  
-        <label for="details" data-i18n="contactLabelDetails">Details</label>
-        <textarea id="details" data-i18n="contactPlaceholderDetails" placeholder="Ingresa tus detalles" aria-label="Detalles del mensaje"></textarea>
-  
-        <button type="submit" aria-label="Enviar formulario de contacto" data-i18n="contactButton">Enviar</button>
-      </form>
-    </div>
-  </section>
-  
+<section class="cta-easystock">
+  <div class="cta-content">
+    <h2 aria-label="Haz crecer tu negocio con EasyStock" data-i18n="ctaTitle">
+      Porque lo das todo por tu negocio,<br><span>nosotros te ayudamos a cuidarlo</span>
+    </h2>
+    <p aria-label="Mensaje emocional de invitación" data-i18n="ctaMessage">
+      Tu esfuerzo merece resultados reales. Con EasyStock, mejora la calidad de tus productos y toma el control de tus procesos como nunca antes. 
+    </p>
+    <a href="#contact-form" class="cta-button" aria-label="Solicita tu demo gratuita" data-i18n="ctaButton">
+      Solicita tu demo gratuita
+    </a>
+  </div>
+</section>
+
   <footer>
     <div class="footer-container">
         <div class="footer-left">
@@ -352,9 +373,26 @@
               <li><a href="#"data-i18n="footerLinkSupport">Soporte</a></li>
             </ul>
           </div>
+          <div> 
+            <h4 aria-label="Sección Contactanos" data-i18n="footerContactanos">Contáctanos</h4>
+              <p data-i18n="footerEmail">Email: <a href="mailto:contacto@easystock.com">contacto@easystock.com</a></p>
+              <p data-i18n="footerTelefono">Teléfono: <a href="tel:+51974738852">+51974738852</a></p>
+              <p data-i18n="footerDireccion">Dirección: Av. Puente Piedra A 523, Lima</p>
+              <br>
+              <h4 aria-label="Sección Redes Sociales" data-i18n="footerRedesSociales">Nuestras redes sociales</h4>
+            
+              <a  href="https://youtube.com" aria-label="YouTube"><img src="img/icons8-youtube.svg" alt="YouTube"></a>        
+              <a  href="https://x.com" aria-label="X"><img class="iconos" src="img/icons8-x.svg" alt="X"></a>
+              <a  href="https://facebook.com/" aria-label="Facebook"><img class="iconos" src="img/icons8-facebook.svg" alt="Facebook"></a>
+              <a  href="https://instagram.com" aria-label="Instagram"><img class="iconos" src="img/icons8-instagram.svg" alt="Instagram"></a>
+              <a  href="https:/tiktok.com" aria-label="TikTok"><img class="iconos" src="img/icons8-tiktok.svg" alt="TikTok"></a>
+          </div>
+
+
         </div>
       </div>
-  
+    <div class="footer-contact">
+    </div>
     <div class="footer-bottom">
       <p aria-label="Derechos de autor" data-i18n="footerCopyright">©2025 EasyStock, Inc. All rights reserved</p>
       <div class="footer-links">
@@ -370,6 +408,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
 <script src="docs/js/script.js"></script>
