@@ -1311,7 +1311,8 @@ nav ul{
   }
 
   .cta-btn {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    margin: 0;
   }
   .cta-buttons {
     flex-direction:row-reverse; /* Cambia a columna en pantallas pequeñas */
@@ -1432,4 +1433,10 @@ nav ul{
     width: 30%;
     padding: 4px 0 4px 10px;
   }
+}
+
+@media screen and (max-width: 360px) {
+.hero-overlay{
+  height: 300px;
+}
 }
