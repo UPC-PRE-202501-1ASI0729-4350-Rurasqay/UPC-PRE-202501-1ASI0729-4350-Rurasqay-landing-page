@@ -24,6 +24,7 @@
       "description2": "Our goal: save you time, reduce errors, and grow your business with smarter decisions.",
       "imageAlt": "Inventory management with EasyStock"
     },
+   
     "features": {
       "title": "Features",
       "list": [
@@ -137,6 +138,14 @@
           "imageAlt": "Alerts"
         }
       ]
-    }
+    },
+
+"cta": {
+  "title": "Because you give your all to your business,\nwe help you take care of it",
+  "message": "Your effort deserves real results. With EasyStock, improve your product quality and take control of your processes like never before.",
+  "button": "Request your free demo"
+}
+
+
   }
   

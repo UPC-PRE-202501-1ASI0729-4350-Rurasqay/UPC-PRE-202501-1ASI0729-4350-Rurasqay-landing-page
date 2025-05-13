@@ -138,6 +138,24 @@
           "imageAlt": "Alertas"
         }
       ]
+    },
+    "screenshots": {
+  "title": "¿Cómo se ve EasyStock?",
+  "images": [
+    {
+      "alt": "Pantalla principal de EasyStock"
+    },
+    {
+      "alt": "Gestión de inventario en EasyStock"
+    },
+    {
+      "alt": "Alertas de stock mínimo"
     }
+  ]
+},"cta": {
+  "title": "Porque lo das todo por tu negocio,\nnosotros te ayudamos a cuidarlo",
+  "message": "Tu esfuerzo merece resultados reales. Con EasyStock, mejora la calidad de tus productos y toma el control de tus procesos como nunca antes.",
+  "button": "Solicita tu demo gratuita"
+}
   }
   

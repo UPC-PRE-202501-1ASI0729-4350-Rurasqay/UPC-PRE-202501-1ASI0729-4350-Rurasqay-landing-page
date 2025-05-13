@@ -145,6 +145,19 @@ const translations = {
   sensorsTitle: "Sensores:",
   selectButton: "Seleccionar",
 
+  footerContactanos: "Contáctanos",
+  footerEmail: "Email: contacto@easystock.com",
+  footerTelefono: "Teléfono: +51974738852",
+  footerDireccion: "Dirección: Av. Puente Piedra A 523, Lima",
+  footerRedesSociales: "Nuestras redes sociales",
+  footerRedes: ["YouTube", "X", "Facebook", "Instagram", "TikTok"],
+  CtaTitle: "Porque lo das todo por tu negocio,nosotros te ayudamos a cuidarlo",
+  CtaMessage: "Tu esfuerzo merece resultados reales. Con EasyStock, mejora la calidad de tus productos y toma el control de tus procesos como nunca antes.",
+  ctaButton: "Solicita tu demo gratuita",
+  screenshotsTittle: "¿Cómo se ve EasyStock?",
+  ctaHowItWorks: "Cómo funciona",
+  ctaTryNow: "Pruébalo ahora",
+
   // Plan Inicial
   plan1Name: "Plan Inicial",
   plan1Subtitle: "Organiza tu inventario",
@@ -195,8 +208,15 @@ const translations = {
     "Hasta 10 sensores",
     "Panel maestro para monitoreo desde cualquier lugar",
     "Exportación de reportes automáticos"
-  ]
-
+  ],
+  cta: {
+    "title": "Porque lo das todo por tu negocio,nosotros te ayudamos a cuidarlo",
+    "message": "Tu esfuerzo merece resultados reales. Con EasyStock, mejora la calidad de tus productos y toma el control de tus procesos como nunca antes.",
+    "button": "Solicita tu demo gratuita"
+  },
+  screenshots: {
+    "title": "¿Cómo se ve EasyStock?"
+  }
   
     },
     en: {
@@ -377,7 +397,20 @@ const translations = {
      "Up to 3 connected sensors",
      "Real-time data visualization"
    ],
- 
+ CtaTitle:"Because you give everything for your business,we help you take care of it",
+ CtaMessage:"Your effort deserves real results. With EasyStock, improve the quality of your products and take control of your processes like never before.",
+ ctaButton: "Request your free demo",
+ screenshotsTittle: "How does EasyStock look like?",
+ ctaHowItWorks: "How it works",
+ctaTryNow: "Try it now",
+
+  footerContactanos: "Contact us",
+  footerEmail: "Email: contacto@easystock.com",
+  footerTelefono: "Phone: +51974738852",
+  footerDireccion: "Address: Av. Puente Piedra A 523, Lima",
+  footerRedesSociales: "Our social networks",
+  footerRedes: ["YouTube", "X", "Facebook", "Instagram", "TikTok"],
+
    // Total Plan
    plan3Name: "Total Plan",
    plan3Subtitle: "Control and expansion",
@@ -394,6 +427,8 @@ const translations = {
      "Master panel for remote monitoring",
      "Automatic report exports"
    ]
+
+
     }
   };
 
